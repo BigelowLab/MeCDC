@@ -1,0 +1,22 @@
+Package: MeCDC
+Title: MeCDC - data from Maine CDC
+Description: Serve COVID19 data and analyses from Maine CDC.
+URL: https://github.com/BigelowLab/MeCDC
+Version: 0.1
+Depends:
+    R (>= 3.0)
+Imports:
+    tidycensus,
+    sf,
+    rvest,
+    xml2,
+    rlang,
+    dplyr,
+    readr,
+    ggplot2,
+    patchwork
+Maintainer: Ben Tupper <btupper@bigelow.org>
+Author: Ben Tupper <btupper@bigelow.org>
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.1.0

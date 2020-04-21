@@ -1,0 +1,18 @@
+# Fetch Maine CDC data daily.
+#
+# Usage:
+# fetch_covid_daily [--date character]
+#
+# Argument details follow
+# --date (type 'character')
+#   date to retrieve as 'YYYY-mm-dd'
+#   default: 2020-04-21
+
+Args <- rscripting::CommandArgs(name = "fetch_covid_daily")
+Args$add_argument("date", default = format(Sys.Date(), "%Y-%m-%d"),
+                 help = "date to retrieve as 'YYYY-mm-dd'")
+Args$parse_arguments()
+
+ok <- MeCDC::fetch_covid_cumulative(date = as.Date(Args$get("date")))
+
+q(save = "no", status = 1)
