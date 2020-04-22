@@ -7,7 +7,7 @@
 fetch_covid_cumulative(
   pop = read_census(),
   save_file = TRUE,
-  path = "/mnt/ecocast/projectdata/covid19/MeCDC/cumcounts"
+  path = mecdc_path("cumcounts")
 )
 }
 \arguments{

@@ -6,6 +6,7 @@ Version: 0.1
 Depends:
     R (>= 3.0)
 Imports:
+    utils,
     tidycensus,
     sf,
     rvest,
@@ -14,7 +15,8 @@ Imports:
     dplyr,
     readr,
     ggplot2,
-    patchwork
+    patchwork,
+    COVID19
 Maintainer: Ben Tupper <btupper@bigelow.org>
 Author: Ben Tupper <btupper@bigelow.org>
 License: MIT + file LICENSE

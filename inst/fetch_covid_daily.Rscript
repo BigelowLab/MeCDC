@@ -13,6 +13,7 @@ Args$add_argument("date", default = format(Sys.Date(), "%Y-%m-%d"),
                  help = "date to retrieve as 'YYYY-mm-dd'")
 Args$parse_arguments()
 
-ok <- MeCDC::fetch_covid_cumulative(date = as.Date(Args$get("date")))
+maine <- MeCDC::fetch_covid_cumulative(date = as.Date(Args$get("date")))
+datahub <- MeCDC::update_covid19datahub()
 
 q(save = "no", status = 1)

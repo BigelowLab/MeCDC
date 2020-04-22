@@ -6,7 +6,7 @@
 \usage{
 read_covid_cumulative(
   date = Sys.Date(),
-  path = "/mnt/ecocast/projectdata/covid19/MeCDC/cumcounts",
+  path = mecdc_path("cumcounts"),
   pop = read_census()
 )
 }

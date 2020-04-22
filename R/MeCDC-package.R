@@ -7,3 +7,5 @@
 #' @importFrom rlang := .data !!
 #' @name MeCDC
 NULL
+
+if(getRversion() >= "2.15.1") utils::globalVariables(c("."))
